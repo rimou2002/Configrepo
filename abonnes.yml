@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: service-abonnes # Nom unique pour Eureka
+    name: ServiceAbonnes # Nom unique pour Eureka
 
   cloud:
     gateway:
