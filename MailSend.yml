@@ -1,0 +1,18 @@
+server:
+  port: 6003 # Port du service send
+
+spring:
+  application:
+    name:  mailSendService # Nom unique pour Eureka
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  # Active la découverte de services pour ce service
+          lower-case-service-id: true # Les ID des services sont en minuscules
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka # URL de l'Eureka Server
